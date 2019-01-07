@@ -16,7 +16,6 @@ stackMethods.push = function(value) {
   this.storage[this.stackSize] = value;
   //increment stackSize when invoked
   this.stackSize ++;
-  console.log(this.stackSize)
 };
 
 stackMethods.pop = function(value) {
@@ -35,7 +34,7 @@ stackMethods.pop = function(value) {
 
 stackMethods.size = function() {
   return this.stackSize;
-}
+};
 
 
 
