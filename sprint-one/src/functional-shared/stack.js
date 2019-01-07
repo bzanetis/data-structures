@@ -15,7 +15,7 @@ var extend = function(obj, methods){
   for(var k in methods){
     obj[k] = methods[k];
   }
-}
+};
 
 var stackMethods = {
   pop: function(){
