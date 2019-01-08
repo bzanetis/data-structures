@@ -5,7 +5,7 @@ var LinkedList = function() {
 
   list.addToTail = function(value) {
     var newNode = Node(value);
-    if(list.tail === null){
+    if (list.tail === null) {
       list.head = newNode;
       list.tail = newNode;
     } else {
@@ -29,19 +29,19 @@ var LinkedList = function() {
     //check if a head val exists
     var currentNode = list.head;
     if (list.head !== null) {
-      if (list.tail.value === target)
-      return true;
-
+      if (list.tail.value === target){
+        return true;
+      }
     }
-      //update current value inside the loop to access currentNode.next until there are no more next
-      while (currentNode !== list.tail) { // while current Node not null
-        if(currentNode.value === target){
-          return true;
-        }
-        currentNode = currentNode.next;
+    //update current value inside the loop to access currentNode.next until there are no more next
+    while (currentNode !== list.tail) { // while current Node not null
+      if (currentNode.value === target) {
+        return true;
+      }
+      currentNode = currentNode.next;
 
-      } //end of while loop
-      return false;
+    } //end of while loop
+    return false;
 
   }; //EOF contains
 
